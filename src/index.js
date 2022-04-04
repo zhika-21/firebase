@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AuthProvider from './contex/GeneralAuthContext'
+import FirestoreProvider from './contex/GeneralFireStore'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <FirestoreProvider>
+          <AuthProvider>
+            <App />
+          </AuthProvider>
+    </FirestoreProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
