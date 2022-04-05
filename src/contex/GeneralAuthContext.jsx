@@ -2,7 +2,6 @@ import {createContext,useState} from 'react'
 import {createUserWithEmailAndPassword,onAuthStateChanged,signOut, signInWithEmailAndPassword} from 'firebase/auth'
 import * as firebaseApp from '../firebase/configFirebase'
 
-
 export const GeneralAuthContext = createContext()
 
 const AuthProvider = ({children})=>{
