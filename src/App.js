@@ -1,9 +1,9 @@
 import {useState,useContext} from 'react'
 import {GeneralAuthContext} from './contex/GeneralAuthContext'
-import logo from './logo.svg';
 import './App.css';
 import FormProducts from './components/FormProducts';
 import AllProducts from './components/Products/AllPRoducts';
+import "./index.css"
 
 function App() {
   const {sigUpwithEmailAndPassword,user,logOut,logignWithEmail} = useContext(GeneralAuthContext)
